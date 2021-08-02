@@ -1,0 +1,16 @@
+.calculator {
+    height: 350px;
+    width: 235px;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    /*monta o layout em forma de grid:coluna/linha*/
+    display: grid;
+    
+    /*define qtd de colunas do grid*/
+    grid-template-columns: repeat(4, 25%);
+    
+    /*define qtd de linhas do grid.
+    A 1º informação representa o display, com isso usou o 'fr-fragmente', a LINHA vai ocupar o espaço que sobrou no grid, e lá no css do display definiu quantas colunas ele ocuparia no grid */
+    grid-template-rows: 1fr 50px 50px 50px 50px 50px;
+}

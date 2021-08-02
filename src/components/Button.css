@@ -1,0 +1,41 @@
+:root {
+    --bg-button: #f0f0f0;
+    --border-button: solid 1px #888;
+}
+
+.button {
+    font-size: 1.4em;
+    background-color: var(--bg-button);
+    border: none;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+    outline: none;
+}
+
+.button:active {
+    background-color: #ccc; /*deixar mais escuro ao clicar*/
+}
+
+.button:hover{
+    background-color: #ccc; /*deixar mais escuro ao passar o mouse por cima*/
+}
+.button.double {
+    grid-column: span 2; /*quantas colunas vai ocupar no grid*/
+}
+
+.button.triple {
+    grid-column: span 3;/*quantas colunas vai ocupar no grid*/
+}
+
+.button.sinal {
+    background-color: #aaa8a7;
+    color: #FFF;
+}
+
+.button.sinal:active {
+    background-color: #83807fcc;
+}
+
+.button.sinal:hover {
+    background-color: #83807fcc;
+}

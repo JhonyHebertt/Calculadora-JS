@@ -108,7 +108,8 @@ export default function Calculadora() {
                 valores[0] = valores[0]
             }
             //zera o valor do index 1 para reutiliza em nova conta
-            valores[1] = 0
+            valores[1] = 0;
+            valores[0] = valores[0].toFixed(2);
             console.log(valores)
 
             setDisplayValue(valores[0]); //atualiza o display
